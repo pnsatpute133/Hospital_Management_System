@@ -1,0 +1,85 @@
+.doctor{
+    width: 100%;
+    margin: 20px;
+    border-radius: 4px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+.card{
+    width:350px;
+    align-items: center;
+
+}
+.gradient{
+    background-image: linear-gradient(#697385,#3b4661);
+    height:125px;
+    border-radius: 4px 4px 0px 0px;
+    align-items: center;
+}
+.profile-down img{
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -75px;
+    padding: 5px;
+    background: white;
+    margin-left: 100px;
+    display: block;
+    text-align: center;
+}
+.profile-title{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+.profile-description{
+    padding: 20px 40px;
+    font-size: 16px;
+    text-align: center;
+}
+.profile-button{
+    font-size: 16px;
+    background: #3b4661;
+    margin:10px 100px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+}
+.profile-button a {
+    text-decoration: none;
+    
+}
+
+
+/*------Media Query -----*/
+@media (max-width:800px)
+{
+    .doctor{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 450px;
+        width: 100%;
+        margin-bottom: 25px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        object-fit: cover;
+        align-items: center;
+        
+    }
+    .gradient{
+        align-items:center;
+
+    }
+    .profile-down img{
+        display: grid;
+        place-items:center;
+    }
+    
+}

@@ -1,0 +1,71 @@
+
+nav{
+    width: 100%;
+   /* background: #01327b; commented to make navbar transparent */
+    color:#fff;
+    padding: 4px 0;/* 4 px for top-bottom and 0 for left-right*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/* it will keep logo on left and text will be on right side*/
+    z-index: 10;
+}
+.logo{
+    width: 100px;
+}
+nav ul li{
+    display: inline-block; /* to display the nav components in horizontal line*/
+    list-style: none;
+    margin: 5px 20px;/* top-bottom Left-right*/
+    font-size: 16px;
+}
+.dark-nav{
+    background-color: #272732e0;
+    transition: 0.5s;
+}
+.menu-icon{
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .logo{
+        width: 140px;
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+     
+}
+@media (max-width: 840px){
+    nav{
+        padding: 15px 0;
+    }
+    nav ul{
+        position:fixed;
+        top:0;
+        right:0;
+        background: #272732e0;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+        bottom: 0;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right:-200px;
+    }
+}
+    
+    

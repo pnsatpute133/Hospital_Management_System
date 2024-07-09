@@ -1,0 +1,47 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;/* vh is view port height*/
+    background:linear-gradient(rgba(34, 41, 48, 0.7),rgba(42, 55, 67, 0.7)), url('../../assets/bg.webp');/* adding background image from assets and then applying layer of color on that image for that we have added liner gradient */   
+    background-size:cover; /* image will cover the page */
+    background-position: center;/* image will be at center of the page */
+    background-repeat: no-repeat;
+    color: white; /* text color*/
+    display:flex ;
+    align-items: center; /* text will be in center*/
+    justify-content: center;
+} 
+.hero-text{
+    text-align: center;
+    max-width: 800px;
+
+}
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 600;
+
+}
+.hero-text p{
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}
+/*------Media Query -----*/
+
+@media(max-width:850px){
+    .hero-text h1{
+        font-size:40px;
+    }
+}
+@media(max-width:650px){
+    .hero-text h1{
+        font-size:30px;
+        max-width:400px;
+        margin:auto;
+    }
+    .hero-text p{
+        font-size: 14px;
+        margin: 15px auto 30px;
+    }
+    
+
+}

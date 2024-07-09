@@ -1,0 +1,56 @@
+/* imported font from fonts.google.com  font name is outfit font import embided code of font in url*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{   /* universal selector - the css given in universal selector get apply to the html elements */ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif; 
+}
+body{ /* background color of web page*/
+  background:#f5f5f5;
+  }
+a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor:pointer;
+  }
+.container{ /* class from navbar , we are going to use it in all the components for giving space fron right and left side*/
+    padding-left: 10%; /* to give some space on both right and left side of the webpage*/
+    padding-right: 10%;
+
+  }
+.btn{ /* it will get used for all the buttons in web page from different components that's why it is written in index.css*/
+    background: #fff;
+    color: #212121;
+    padding:14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+.btn img{
+    width:20px;
+    margin-left: 10px;
+  }
+.btn.dark-btn{
+  background: #272732e0;
+  color: #fff;
+  
+}
+/*------Media Query -----*/
+@media(max-width:1200px){
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn{
+    padding: 14px 22px;
+  }
+}
+
+
